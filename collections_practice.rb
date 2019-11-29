@@ -25,9 +25,17 @@ end
 # Build a method swap_elements that takes in an array and swaps the second and third elements. Remember that array indices start at 0, so the second element has an index of 1 and the third element has an index of 2.
 
 def swap_elements(array)
+<<<<<<< HEAD
   array[1], array[2] = array[2], array[1]
   array
   end
+=======
+      array.sort_by {|index| index[1] <=> index[2]}
+      index[2]
+      # binding.pry
+end
+
+>>>>>>> e288b8909d657cac47a7e4129031318554e0d625
 
 # Advanced: Try building a method swap_elements_from_to that takes in three arguments, array, index, destination_index, that will allow you to specify the index of the element you would like to move to a new index. So:
 #
@@ -37,6 +45,7 @@ def swap_elements(array)
 #
 # Question 5: #reverse_array
 # Build a method reverse_array that takes in an array of integers and returns a copy of the array with the elements in reverse order.
+<<<<<<< HEAD
 
 def reverse_array(array)
 array.reverse
@@ -142,4 +151,22 @@ end
     end
   end
 end
+=======
+#
+# Question 6: #kesha_maker
+# Build a method called kesha_maker that takes in an array of strings and replaces the third character in each string with a $ ("dollar sign")—Ke$ha style. Use the .each method to iterate and build a new array to return at the end of your method, just like we did in the "My Each" lab.
+#
+# Question 7: #find_a
+# Build a method find_a that returns all the strings in the array passed to it that start_with? (hint) the letter "a". You'll want to use a high level iterator for this that finds, selects, or detects elements based on a condition.
+#
+# Question 8: #sum_array
+# Build a method sum_array that adds together all of the integers in the array and returns their sum.
+#
+# Advanced: Try using the .inject method here.
+#
+# Question 9: #add_s
+# Build a method that adds an "s" to each word in the array except for the second element in the array ("feet" is already plural).
+#
+
+>>>>>>> e288b8909d657cac47a7e4129031318554e0d625
 # Advanced: Iterators in Ruby are chainable, see if you can use .each_with_index in addition to .collect to solve this one in an elegant way. What happens if you write:
